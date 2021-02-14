@@ -7,258 +7,355 @@
   <title>Legal Innovation - Pocket Guide</title>
 
 
-  
+
 
   <style>
     @import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-}
 
-body, html {
-  overflow-x: hidden;
-  background: #232323;
-  color: #fff;
-}
+    * {
+      margin: 0;
+      padding: 0;
+    }
 
-.container {
-  width: 100%;
-  padding: 0 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container .box {
-  max-width: 250px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-.container .box .title {
-  width: 100%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 100px;
-}
-.container .box .title .block {
-  width: 0%;
-  height: inherit;
-  background: #f1613a;
-  position: absolute;
-  animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-  display: flex;
-}
-.container .box .title h1 {
-  font-family: "Poppins";
-  color: #fff;
-  font-size: 32px;
-  -webkit-animation: mainFadeIn 2s forwards;
-  -o-animation: mainFadeIn 2s forwards;
-  animation: mainFadeIn 2s forwards;
-  animation-delay: 1.6s;
-  opacity: 0;
-  display: flex;
-  align-items: baseline;
-  position: relative;
-}
-.container .box .title h1 span {
-  width: 0px;
-  height: 0px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  background: #f1613a;
-  -webkit-animation: load 0.6s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-  animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-  animation-delay: 2s;
-  margin-left: 5px;
-  margin-top: -10px;
-  position: absolute;
-  bottom: 13px;
-  right: -12px;
-}
-.container .box .role {
-  width: 100%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 30px;
-  margin-top: 10px;
-}
-.container .box .role .block {
-  width: 0%;
-  height: inherit;
-  background: #4e264f;
-  position: absolute;
-  animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-  animation-delay: 2s;
-  display: flex;
-}
-.container .box .role p {
-  animation: secFadeIn 2s forwards;
-  animation-delay: 3.2s;
-  opacity: 0;
-  font-weight: 400;
-  font-family: "Lato";
-  color: #ffffff;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-}
+    body,
+    html {
+      overflow-x: hidden;
+      background: #232323;
+      color: #fff;
+    }
 
-@keyframes mainBlock {
-  0% {
-    width: 0%;
-    left: 0;
-  }
-  50% {
-    width: 100%;
-    left: 0;
-  }
-  100% {
-    width: 0;
-    left: 100%;
-  }
-}
-@keyframes secBlock {
-  0% {
-    width: 0%;
-    left: 0;
-  }
-  50% {
-    width: 100%;
-    left: 0;
-  }
-  100% {
-    width: 0;
-    left: 100%;
-  }
-}
-@keyframes mainFadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes popIn {
-  0% {
-    width: 0px;
-    height: 0px;
-    background: #e9d856;
-    border: 0px solid #ddd;
-    opacity: 0;
-  }
-  50% {
-    width: 10px;
-    height: 10px;
-    background: #e9d856;
-    opacity: 1;
-    bottom: 45px;
-  }
-  65% {
-    width: 7px;
-    height: 7px;
-    bottom: 0px;
-    width: 15px;
-  }
-  80% {
-    width: 10px;
-    height: 10px;
-    bottom: 20px;
-  }
-  100% {
-    width: 7px;
-    height: 7px;
-    background: #e9d856;
-    border: 0px solid #222;
-    bottom: 13px;
-  }
-}
-@keyframes secFadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0.5;
-  }
-}
-@keyframes top {
-  0% {
-    opacity: 0;
-    bottom: -80px;
-  }
-  100% {
-    opacity: 1;
-    bottom: 0px;
-  }
-}
-section h2 {
-  font-family: "Poppins";
-  margin-top: 20px;
-}
-section p {
-  font-family: "Lato";
-  margin-bottom: 10px;
-}
+    .container {
+      width: 100%;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container .box {
+      max-width: 90%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container .box .title {
+      width: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 100px;
+    }
+
+    .container .box .title .block {
+      width: 0%;
+      height: inherit;
+      background: #f1613a;
+      position: absolute;
+      animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+      display: flex;
+    }
+
+    .container .box .title h1 {
+      font-family: "Poppins";
+      color: #fff;
+      font-size: 32px;
+      -webkit-animation: mainFadeIn 2s forwards;
+      -o-animation: mainFadeIn 2s forwards;
+      animation: mainFadeIn 2s forwards;
+      animation-delay: 1.6s;
+      opacity: 0;
+      display: flex;
+      align-items: baseline;
+      position: relative;
+    }
+
+    .container .box .title h1 span {
+      width: 0px;
+      height: 0px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      background: #f1613a;
+      -webkit-animation: load 0.6s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+      animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+      animation-delay: 2s;
+      margin-left: 5px;
+      margin-top: -10px;
+      position: absolute;
+      bottom: 13px;
+      right: -12px;
+    }
+
+    .container .box .role {
+      width: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 30px;
+      margin-top: 10px;
+    }
+
+    .container .box .role .block {
+      width: 0%;
+      height: inherit;
+      background: #4e264f;
+      position: absolute;
+      animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+      animation-delay: 2s;
+      display: flex;
+    }
+
+    .container .box .role p {
+      animation: secFadeIn 2s forwards;
+      animation-delay: 3.2s;
+      opacity: 0;
+      font-weight: 400;
+      font-family: "Lato";
+      color: #ffffff;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+    }
+
+    @keyframes mainBlock {
+      0% {
+        width: 0%;
+        left: 0;
+      }
+
+      50% {
+        width: 100%;
+        left: 0;
+      }
+
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes secBlock {
+      0% {
+        width: 0%;
+        left: 0;
+      }
+
+      50% {
+        width: 100%;
+        left: 0;
+      }
+
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes mainFadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes popIn {
+      0% {
+        width: 0px;
+        height: 0px;
+        background: #e9d856;
+        border: 0px solid #ddd;
+        opacity: 0;
+      }
+
+      50% {
+        width: 10px;
+        height: 10px;
+        background: #e9d856;
+        opacity: 1;
+        bottom: 45px;
+      }
+
+      65% {
+        width: 7px;
+        height: 7px;
+        bottom: 0px;
+        width: 15px;
+      }
+
+      80% {
+        width: 10px;
+        height: 10px;
+        bottom: 20px;
+      }
+
+      100% {
+        width: 7px;
+        height: 7px;
+        background: #e9d856;
+        border: 0px solid #222;
+        bottom: 13px;
+      }
+    }
+
+    @keyframes secFadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 0.5;
+      }
+    }
+
+    @keyframes top {
+      0% {
+        opacity: 0;
+        bottom: -80px;
+      }
+
+      100% {
+        opacity: 1;
+        bottom: 0px;
+      }
+    }
+
+    section h2 {
+      font-family: "Poppins";
+      margin-top: 20px;
+    }
+
+    section p {
+      font-family: "Lato";
+      margin-bottom: 10px;
+    }
+
+    .tooltip {
+      position: relative;
+      /* making the .tooltip span a container for the tooltip text */
+      border-bottom: 1px dashed #fff;
+      /* little indicater to indicate it's hoverable */
+    }
+
+    .tooltip:hover:before {
+      display: block;
+      opacity: 1;
+    }
+
+    .tooltip:before {
+      content: attr(data-text);
+      /* here's the magic */
+      position: absolute;
+
+      /* vertically center */
+      top: 50%;
+      transform: translateY(-50%);
+
+      /* move to right */
+      left: 100%;
+      margin-left: 15px;
+      /* and add a small left margin */
+
+      /* basic styles */
+      width: 200px;
+      padding: 10px;
+      border-radius: 10px;
+      background: #000;
+      color: #fff;
+      text-align: center;
+
+      display: none;
+      /* hide by default */
+      opacity: 0;
+      transition: .3s opacity;
+      z-index: 1;
+    }
+
+    .tooltip:after {
+      content: "";
+      position: absolute;
+
+      /* position tooltip correctly */
+      left: 100%;
+      margin-left: -5px;
+
+      /* vertically center */
+      top: 50%;
+      transform: translateY(-50%);
+
+      /* the arrow */
+      border: 10px solid #000;
+      border-color: transparent black transparent transparent;
+
+      display: none;
+      opacity: 0;
+      transition: .3s;
+    }
+
+    .tooltip:hover:before,
+    .tooltip:hover:after {
+      display: block;
+      opacity: 1;
+    }
   </style>
 
-  
-<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeConsoleRunner-7f4d47902dc785f30dedcac9c996b9f31d4dfcc33567cc48f0431bc918c2bf05.js"></script>
-<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-bb9a2ba1f03f6147732cb3cd52ac86c6b24524aa87a05ed0b726f11e46d7e277.js"></script>
-<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js"></script>
+
+  <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeConsoleRunner-7f4d47902dc785f30dedcac9c996b9f31d4dfcc33567cc48f0431bc918c2bf05.js"></script>
+  <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-bb9a2ba1f03f6147732cb3cd52ac86c6b24524aa87a05ed0b726f11e46d7e277.js"></script>
+  <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js"></script>
 </head>
 
 <body>
   <section class="container">
     <div class="box">
 
-        <div class="title">
-            <span class="block"></span>
-            <h1>Legal Innovation<span></span></h1>
-        </div>
+      <div class="title">
+        <span class="block"></span>
+        <h1>Legal Innovation<span></span></h1>
+      </div>
 
-        <div class="role">
-            <div class="block"></div>
-            <p>A digital pocket guide</p>
-        </div>
+      <div class="role">
+        <div class="block"></div>
+        <p>A digital pocket guide</p>
+      </div>
 
     </div>
 
-</section>
- <section class="container">
+  </section>
+  <section class="container">
     <div class="box">
-     <h2>What is legal innovation?</h2>
+      <h2>What is legal innovation?</h2>
       <p>A profession becoming comfortable with leading historical ways of working behind.</p>
-       <p>Involving new voices in the delivery of legal services, opening up the Ivory Tower of legal practice.</p>
-       
-       <h2>Why is it important?</h2>
+      <p>Involving new voices in the delivery of legal services, opening up the Ivory Tower of legal practice.</p>
+
+      <h2>Why is it important?</h2>
       <p>Pressures on billing and evolving client expectations when it comes to the delivery of legal advice means that innovation is now vital for a law firm to survive.</p>
-       <p>Deregulation of the legal services market and the arrival of ALS providers means that clients have a wider choice for the best-value legal advice.</p>
+      <p>Deregulation of the legal services market and the arrival of <span data-text="Alternative legal services."
+ class="tooltip">ALS</span> providers means that clients have a wider choice for the best-value legal advice.</p>
 
 
-     <h2>More than just technology</h2>
+      <h2>More than just technology</h2>
       <p>Technology isn't the only tool in the ability for a firm to innovate.</p>
-       <p>The technology used by law firms isn't particuarly innovative, but rather the application of the technolovy provides the innovation.</p>
-       <p>True innovation will include non-technological initiatives. This might include the use of legal design, legal project management.</p>
-     <h2>Legal innovation is about changing mindsets</h2>
+      <p>The technology used by law firms isn't particuarly innovative, but rather the application of the technolovy provides the innovation.</p>
+      <p>True innovation will include non-technological initiatives. This might include the use of legal design, legal project management.</p>
+      <h2>Legal innovation is about changing mindsets</h2>
       <p>Lawyers becoming accepting of not being the only voice in the room that matters when it comes to legal.</p>
-       <p>The delivery of legal services through non traditional means.</p>
-       <p>A reinvention of the trusted advisor for the Fourth Industrial Revolution.</p>
+      <p>The delivery of legal services through non traditional means.</p>
+      <p>A reinvention of the trusted advisor for the Fourth Industrial Revolution.</p>
 
-    <h2>New voices</h2>
-    <p>
-       - Design experts<br/>
-       - Legal Project Managers (LPMs)<br/>
-       - Legal Technologists <br/>
-       <br/>
-       Only one of these is a tech-focused role.
-    </p>
-           </div>
-</section>
+      <h2>New voices</h2>
+      <p>
+        - <span data-text="An individual with expertise in how to present legal information in a more acessible manner." class="tooltip">Legal design experts</span><br />
+        - <span data-text="An expert in the project delivery of a legal matter" class="tooltip">Legal Project Managers (LPMs)</span><br />
+        - <span data-text="An individual with a multi-displinary understanding of how technology can applied to the delivery of legal services." class="tooltip">Legal Technologists</span><br />
+        <br />
+        Only one of these is a tech-focused role.
+      </p>
+    </div>
+  </section>
 
 </body>
 
